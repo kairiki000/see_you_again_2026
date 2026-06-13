@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+       <head>
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+          <meta charset="UTF-8">
+<script>
+function gate(){
+    // ▼ユーザの入力を求める
+    var UserInput = prompt("パスワードを入力して下さい:","");
+
+    // ▼キャンセルをチェック
+    if( UserInput != null ) {
+       // ▼入力内容からファイル名を生成して移動
+       location.href = UserInput + ".html";
+    }
+ }
+ </script>
+ <link rel="stylesheet" type="text/css" href="passWard.css">
+       </head>
+      <body>
+         <div class="main">
+            <button class="sub" aria-placeholder="click_here" onclick="gate();">click_here</button>
+        </div>
+      </body>
+</html>
